@@ -19,7 +19,38 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // No reCAPTCHA check here—let Formspree handle it
-        form.submit(); // Native submission to Formspree
+        const recaptchaResponse = grecaptcha.getResponse();
+
+        if (!recaptchaResponse) {
+            thankYouMessage.textContent = "Please complete the CAPTCHA.";
+            thankYouMessage.style.color = "red";
+            thankYouMessage.classList.remove("d-none");
+            return;
+        }
+
+        const formData = new FormData(form);
+        formData.append("g-recaptcha-response", recaptchaResponse);
+
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            mode: "no-cors" 
+        })
+        .then(response => {
+            if (response.type === "opaque" || response.status === 200) { 
+                thankYouMessage.textContent = "Thank you! Your message has been sent.";
+                thankYouMessage.style.color = "black";
+                thankYouMessage.classList.remove("d-none");
+                form.reset();
+                grecaptcha.reset();
+            } else {
+                throw new Error("Submission failed");
+            }
+        })
+        .catch(() => {
+            thankYouMessage.textContent = "Something went wrong. Please try again.";
+            thankYouMessage.style.color = "red";
+            thankYouMessage.classList.remove("d-none");
+        });
     });
 });
