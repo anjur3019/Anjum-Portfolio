@@ -28,29 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const formData = new FormData(form);
-        formData.append("g-recaptcha-response", recaptchaResponse);
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData,
-            mode: "no-cors" 
-        })
-        .then(response => {
-            if (response.type === "opaque" || response.status === 200) { 
-                thankYouMessage.textContent = "Thank you! Your message has been sent.";
-                thankYouMessage.style.color = "black";
-                thankYouMessage.classList.remove("d-none");
-                form.reset();
-                grecaptcha.reset();
-            } else {
-                throw new Error("Submission failed");
-            }
-        })
-        .catch(() => {
-            thankYouMessage.textContent = "Something went wrong. Please try again.";
-            thankYouMessage.style.color = "red";
-            thankYouMessage.classList.remove("d-none");
-        });
+        // Add reCAPTCHA token to a hidden input and submit natively
+        const recaptchaInput = document.createElement("input");
+        recaptchaInput.type = "hidden";
+        recaptchaInput.name = "g-recaptcha-response";
+        recaptchaInput.value = recaptchaResponse;
+        form.appendChild(recaptchaInput);
+        form.submit();
     });
 });
