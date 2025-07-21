@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjum's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/Anjum logo.svg" alt="Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contactForm">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#contactForm" role="button">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center gap-5 gap-lg-0">
+                    <div class="col-lg-6">
+                        <span class="text-white text-uppercase main-txt">Hi, I'm Anjum</span>
+                        <h1 class="text-white fw-bold">Web Developer & <span class="txt-green"><br>UI Designer</span></h1>
+                        <p class="txt-gray my-4 para">
+                            I build responsive websites with clean UI, strong UX focus, and fast performance to grow your digital presence.
+                        </p>
+                        <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#portfolio" role="button">View Portfolio</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-container mx-auto"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-container">
+            <div class="container">
+                <div class="row align-items-center gap-5 gap-lg-0">
+                    <div class="col-lg-6 order-last order-lg-first">
+                        <div class="about-me glow">
+                            <img src="Images/test6.png" alt="About Me">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="text-white text-uppercase main-txt">Let me introduce myself</span>
+                        <h2 class="txt-green fw-semibold">About me</h2>
+                        <h5 class="text-white mt-4">A Story of Creativity and Growth</h5>
+                        <p class="txt-gray para">
+                            I specialize in crafting clean layouts, smooth browsing experiences, and professional online spaces that align with your brand — I provide modern, functional web solutions tailored to your goals.
+                        </p>
+                        <h5 class="text-white mt-4">📄 Want to Know More?</h5>
+                        <p class="txt-gray para">
+                            Explore my skills, experience, and detailed project history in my resume below.
+                        </p>
+                        <a class="btn mybtn rounded-0 text-uppercase bg-green" href="Images/Anjum Rasheed.pdf" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-container">
+            <div class="container text-center">
+                <span class="text-white text-uppercase main-txt">What I will do for you</span>
+                <h2 class="txt-green fw-semibold">Services</h2>
+                <div class="row mt-5 gap-4 gap-lg-0">
+                    <div class="col-lg-4 d-flex">
+                        <div class="card bg-dark-blue py-5 glow hover-card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-pager d-block fs-1 txt-green mb-4"></i>
+                                <h5 class="card-title text-white fs-4 mb-4">Web Design & Front-End Development</h5>
+                                <p class="card-text txt-gray">
+                                    Design and build fully responsive websites using HTML, CSS, JavaScript, and Bootstrap that engage users and reflect your brand.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex">
+                        <div class="card bg-dark-blue py-5 glow hover-card">
+                            <div class="card-body">
+                                <i class="fa-brands fa-wordpress d-block fs-1 txt-green mb-4"></i>
+                                <h5 class="card-title text-white fs-4 mb-4">WordPress & Shopify Solutions</h5>
+                                <p class="card-text txt-gray">
+                                    Customize themes, structure content, and develop functional business websites and eCommerce solutions using WordPress and Shopify.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex">
+                        <div class="card bg-dark-blue py-5 glow hover-card">
+                            <div class="card-body">
+                                <i class="fa-brands fa-figma d-block fs-1 txt-green mb-4"></i>
+                                <h5 class="card-title text-white fs-4 mb-4">UI/UX Prototyping</h5>
+                                <p class="card-text txt-gray">
+                                    Use Figma to create clean, intuitive interfaces that enhance user experience and align with modern trends.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section-container">
+            <div class="container text-center">
+                <span class="text-white text-uppercase main-txt">Some of my recent works</span>
+                <h2 class="txt-green fw-semibold">Portfolio</h2>
+                <div class="row justify-content-center mt-5 gap-5">
+                    <div class="col-lg-4 mycard glow">
+                        <div class="card bg-dark-blue">
+                            <img src="Images/project333.jpg" class="card-img-top" alt="FQMS Software">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">FQMS Software</h5>
+                                <p class="card-text txt-gray">
+                                    Installment management software interface crafted for a smoother user experience and lead generation.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="https://installmentsoftware.net/" role="button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mycard glow">
+                        <div class="card bg-dark-blue">
+                            <img src="Images/project5555.jpg" class="card-img-top" alt="Dip & Flip (App)">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Dip & Flip (App)</h5>
+                                <p class="card-text txt-gray">
+                                    Fast food restaurant mobile app designed in Figma, focusing on modern UI, menu flow, and online ordering ease.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="https://www.figma.com/proto/5ECszVMU4igRFUtfKxUwBK/Dip-Flip-App?node-id=1-57&scaling=min-zoom&content-scaling=fixed" role="button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mycard glow">
+                        <div class="card bg-dark-blue">
+                            <img src="Images/project666.jpg" class="card-img-top" alt="Aurooz (Figma Design)">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Aurooz (Figma Design)</h5>
+                                <p class="card-text txt-gray">
+                                    Fashion and jewelry store web layout designed in Figma with stylish sections and mobile-first user interface focus.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="https://bit.ly/4gJk0RR" role="button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5 gap-5">
+                    <div class="col-lg-4 mycard glow">
+                        <div class="card bg-dark-blue">
+                            <img src="Images/project444.jpg" class="card-img-top" alt="WABS Tech">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">WABS Tech</h5>
+                                <p class="card-text txt-gray">
+                                    Technology company website developed with a clean, corporate structure to highlight its services and products.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="https://wabstech.com/" role="button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mycard glow">
+                        <div class="card bg-dark-blue">
+                            <img src="Images/project222.jpg" class="card-img-top" alt="Aurooz">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Aurooz</h5>
+                                <p class="card-text txt-gray">
+                                    Women’s clothing and Korean jewelry store designed for smooth navigation and elegant shopping experience overall.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="https://aurooz-test.gulshan-traders.com/" role="button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mycard glow">
+                        <div class="card bg-dark-blue">
+                            <img src="Images/project111.jpg" class="card-img-top" alt="Sharkore">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Sharkore</h5>
+                                <p class="card-text txt-gray">
+                                    Gym, activewear, and sportswear export business website designed with a modern layout and engaging user flow.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="https://shark.gulshan-traders.com/" role="button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section-container">
+            <div class="container text-center">
+                <span class="text-white text-uppercase main-txt">What my clients say</span>
+                <h2 class="txt-green fw-semibold">Testimonial</h2>
+                <div class="swiper mySwiper mt-5">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide bg-dark-blue p-4 rounded-3 testimonial-card d-flex flex-column">
+                            <div class="client-info d-flex align-items-center gap-3 mb-3">
+                                <div class="profile">
+                                    <img src="Images/clientnew1.jpg" alt="client">
+                                </div>
+                                <h5 class="text-white mb-0">Afshan</h5>
+                            </div>
+                            <div class="testimonial-text mt-auto">
+                                <p class="txt-gray text-start m-0">
+                                    Working with Anjum was an absolute pleasure! She redesigned my entire website with a fresh, modern look that perfectly reflects my brand. Her attention to detail and responsiveness made the process smooth and stress-free.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide bg-dark-blue p-4 rounded-3 testimonial-card d-flex flex-column">
+                            <div class="client-info d-flex align-items-center gap-3 mb-3">
+                                <div class="profile">
+                                    <img src="Images/clientnew2.jpg" alt="client">
+                                </div>
+                                <h5 class="text-white mb-0">James</h5>
+                            </div>
+                            <div class="testimonial-text mt-auto">
+                                <p class="txt-gray text-start m-0">
+                                    I hired Anjum to build my Shopify store from scratch and she nailed every aspect — design, performance, and user experience. The site looks professional and converts well. I'm beyond satisfied!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide bg-dark-blue p-4 rounded-3 testimonial-card d-flex flex-column">
+                            <div class="client-info d-flex align-items-center gap-3 mb-3">
+                                <div class="profile">
+                                    <img src="Images/clientnew3.jpg" alt="client">
+                                </div>
+                                <h5 class="text-white mb-0">Hassan</h5>
+                            </div>
+                            <div class="testimonial-text mt-auto">
+                                <p class="txt-gray text-start m-0">
+                                    Anjum helped me with a complete redesign of my outdated business site. She kept me updated throughout the process and delivered a polished, mobile-friendly site that my clients love. Amazing work!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide bg-dark-blue p-4 rounded-3 testimonial-card d-flex flex-column">
+                            <div class="client-info d-flex align-items-center gap-3 mb-3">
+                                <div class="profile">
+                                    <img src="Images/clientnew4.jpg" alt="client">
+                                </div>
+                                <h5 class="text-white mb-0">Emily</h5>
+                            </div>
+                            <div class="testimonial-text mt-auto">
+                                <p class="txt-gray text-start m-0">
+                                    Anjum’s front-end development skills are top-notch. She transformed my Figma designs into a flawless HTML/CSS/Bootstrap website. Everything works beautifully across all devices. I would definitely work with her again!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide bg-dark-blue p-4 rounded-3 testimonial-card d-flex flex-column">
+                            <div class="client-info d-flex align-items-center gap-3 mb-3">
+                                <div class="profile">
+                                    <img src="Images/clientnew5.jpg" alt="client">
+                                </div>
+                                <h5 class="text-white mb-0">Natalie</h5>
+                            </div>
+                            <div class="testimonial-text mt-auto">
+                                <p class="txt-gray text-start m-0">
+                                    Anjum created a clean, responsive UI for my SaaS dashboard and delivered exactly what I had envisioned — and more. Her designs are sleek, intuitive, and user-friendly. She truly understands both aesthetics and functionality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control mt-5 d-flex justify-content-center">
+                        <i class="fa-solid fa-arrow-left bg-green prev"></i>
+                        <i class="fa-solid fa-arrow-right bg-green next"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section-container">
+            <div class="container text-center">
+                <span class="text-white text-uppercase main-txt">Recent blogs</span>
+                <h2 class="txt-green fw-semibold">Blog</h2>
+                <div class="row justify-content-center mt-5 gap-5">
+                    <div class="col-lg-4 blog-card glow">
+                        <div class="card bg-dark-blue px-3 pb-3">
+                            <img src="Images/blog1.jpg" class="card-img-top" alt="ViewScape">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">The Future of Front-End</h5>
+                                <p class="card-text txt-gray">
+                                    From HTML to modern JS frameworks — a quick dive into what's reshaping web experiences.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 blog-card glow">
+                        <div class="card bg-dark-blue px-3 pb-3">
+                            <img src="Images/blog2.jpg" class="card-img-top" alt="ViewScape">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Smarter Interfaces with AI</h5>
+                                <p class="card-text txt-gray">
+                                    Discover how artificial intelligence is powering next-gen designs, personalization, and UX.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 blog-card glow">
+                        <div class="card bg-dark-blue px-3 pb-3">
+                            <img src="Images/blog3.jpg" class="card-img-top" alt="ViewScape">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Designing for Impact</h5>
+                                <p class="card-text txt-gray">
+                                    Unlock the secrets of intuitive UI that drives real user engagement — less clutter, more clarity.
+                                </p>
+                                <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact us -->
+        <div class="container text-center">
+            <span class="text-white text-uppercase main-txt">Get in touch</span>
+            <h2 class="txt-green fw-semibold">Contact me</h2>
+            <form id="contactForm" action="https://formspree.io/f/mdkdapqb" method="POST" class="bg-green mx-auto px-4 py-5 rounded-3 mt-5" novalidate>
+                <div class="mb-4">
+                    <input type="text" name="name" class="form-control py-2" placeholder="Your Name" required />
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" class="form-control py-2" placeholder="Your Email" required />
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="subject" class="form-control py-2" placeholder="Your Subject" required />
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <div class="g-recaptcha" data-sitekey="6LdeA4krAAAAAAyGsDG1bZG7_JyMyyHwc4yY1Uzl"></div>
+                </div>
+                <button type="submit" class="btn mybtn text-white rounded-0 text-uppercase bg-black">Send message</button>
+                <div id="thankYouMessage" class="d-none mt-3" style="font-weight:600;"></div>
+            </form>
+
+            <!-- reCAPTCHA script -->
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <script src="script.js"></script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="my-3">
+        <div class="container">
+            <div class="line"></div>
+            <div class="row mt-3 gap-4 gap-lg-0">
+                <div class="col-lg-6 d-flex justify-content-sm-start justify-content-center">
+                    <a href="https://www.linkedin.com/in/anjumr/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in txt-green fs-5"></i>
+                    </a>
+                    <a href="#" class="ms-3">
+                        <i class="fa-brands fa-upwork txt-green fs-5"></i>
+                    </a>
+                    <a href="#" class="ms-3">
+                        <i class="fa-brands fa-behance txt-green fs-5"></i>
+                    </a>
+                    <a href="#" class="ms-3">
+                        <i class="fa-brands fa-github txt-green fs-5"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <p class="txt-gray text-lg-end text-center">
+                        Copyright © 2025 - All rights are reserved by Anjum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>
