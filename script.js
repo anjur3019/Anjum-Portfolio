@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(form.action, {
             method: "POST",
             body: formData,
-            mode: "no-cors" 
+            mode: "no-cors" // Prevents redirect and handles opaque response
         })
         .then(response => {
-            if (response.type === "opaque" || response.status === 200) { 
+            if (response.type === "opaque") { // Formspree returns opaque response with no-cors
                 thankYouMessage.textContent = "Thank you! Your message has been sent.";
                 thankYouMessage.style.color = "black";
                 thankYouMessage.classList.remove("d-none");
