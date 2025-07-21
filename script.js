@@ -34,12 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(form.action, {
             method: "POST",
             body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
+            mode: "no-cors" 
         })
         .then(response => {
-            if (response.ok) {
+            if (response.type === "opaque" || response.status === 200) { 
                 thankYouMessage.textContent = "Thank you! Your message has been sent.";
                 thankYouMessage.style.color = "black";
                 thankYouMessage.classList.remove("d-none");
